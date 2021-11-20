@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo&family=Space+Mono:wght@400;700&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    /* box-sizing: border-box; */
+}
+
+body {
+    background-color: #c2c2d6;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: default;
+}
+
+#app {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(151, 187, 207);
+}
+
+#calculator {
+    position: relative;
+    width: 320px;
+    padding: 2px;
+    outline: 2px solid white;
+    background-color: rgb(0, 0, 0);
+    border-radius: 5px;
+    font-family: 'Heebo', sans-serif;
+    font-family: 'Space Mono', monospace;
+}
+
+#footer {
+    text-align: center;
+    padding: 20px;
+    font-family: 'MV Boli', sans-serif;
+}
+
+@media only screen and (width < 600px) {
+
+    /*for extra small and small devices such as mobile phones, tablets*/
+    #calculator {
+        width: 98vw;
+    }
+
+    button {
+        width: 25%;
+    }
+
+    #clear,
+    #zero {
+        width: 50%;
+    }
+}

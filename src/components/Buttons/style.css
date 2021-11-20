@@ -1,0 +1,33 @@
+button {
+    position: relative;
+    height: 65px;
+    width: 80px;
+    color: white;
+    background-color: #4d4d4d;
+    border: none;
+    font-size: 20px;
+    outline: 1px solid black;
+
+}
+
+button:hover {
+    color: black;
+    outline: 0.05rem solid gray;
+    z-index: 3;
+}
+
+#clear,
+#zero {
+    width: 160px;
+}
+
+#equals {
+    position: absolute;
+    height: 130px;
+    /* height: 65px; */
+    background-color: #004466;
+    margin-top: -65px;
+}
+#clear {
+    background-color: darkred;
+}
